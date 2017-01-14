@@ -23,4 +23,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Include package config fragments
 include $(LOCAL_PATH)/product/*.mk
 
+$(call inherit-product-if-exists, vendor/volte/volte.mk)
+$(call inherit-product-if-exists, vendor/volte/jalebi/jalebi-vendor.mk)
 $(call inherit-product-if-exists, vendor/yu/jalebi/jalebi-vendor.mk)
