@@ -19,8 +19,11 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
 include device/yu/jalebi/board/*.mk
 
-# Assertions
-TARGET_BOARD_INFO_FILE := device/yu/jalebi/board-info.txt
-
 # Inherit from proprietary files
 -include vendor/yu/jalebi/BoardConfigVendor.mk
+
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
+# Bootanimation optimizations
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
