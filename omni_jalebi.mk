@@ -22,3 +22,8 @@ PRODUCT_NAME := omni_jalebi
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := Yunique
 PRODUCT_MANUFACTURER := YU
+
+# Enable stock zip packages flash
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.build.product=YUNIQUE \
+    ro.product.device=YUNIQUE
