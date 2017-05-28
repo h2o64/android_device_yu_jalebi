@@ -1,5 +1,17 @@
 [
   {
+    "remote":"gh",
+    "repository": "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common"
+    "revision":"cm-14.1"
+  },
+  {
+    "remote":"gh",
+    "repository": "yu-community-os/android_vendor_volte",
+    "target_path": "vendor/volte"
+    "revision":"cyos-7.1"
+  },
+  {
     "repository": "android_device_cyanogen_msm8916-common",
     "target_path": "device/cyanogen/msm8916-common"
   },
